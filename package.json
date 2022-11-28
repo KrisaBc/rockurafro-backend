@@ -1,0 +1,32 @@
+{
+  "name": "rockurafro_backend",
+  "version": "1.0.0",
+  "description": "backend",
+  "main": "src/index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "start": "node src",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.16",
+    "mongoose": "^6.3.2",
+    "bcryptjs": "^2.4.3",
+    "commons": "file:../commons",
+    "logic": "file:../logic"
+  },
+  "devDependencies": {
+    "chai": "^4.3.6",
+    "dotenv": "^16.0.1",
+    "jest": "^28.1.3",
+    "mocha": "^10.0.0"
+  }
+}
