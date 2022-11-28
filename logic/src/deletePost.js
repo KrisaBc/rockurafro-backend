@@ -1,4 +1,4 @@
-const { models: { User, Post } } = require('data')
+const { models: { User, Post } } = require("../../data/src")
 const { errors: {
     NotFoundError,
     AuthError,
@@ -6,7 +6,7 @@ const { errors: {
     validators: {
         validateId,
     }
-} = require('commons')
+} = require("../../commons/src")
 
 function deletePost(userId, postId) {
     validateId(postId, 'postId')

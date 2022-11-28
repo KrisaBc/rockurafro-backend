@@ -1,4 +1,4 @@
-const { models: { User } } = require('data')
+const { models: { User } } = require("../../data/src")
 const { errors: {
     AuthError,
     NotFoundError
@@ -7,7 +7,7 @@ const { errors: {
         validatePassword,
         validateId
     }
-} = require('commons')
+} = require("../../commons/src")
 const { encryptPassword, comparePassword } = require('./helpers/crypt')
 
 function updatePassword(userId, oldPassword, newPassword) {

@@ -1,11 +1,11 @@
-const { models: { User, Post } } = require('data')
+const { models: { User, Post } } = require("../../data/src")
 const { errors: {
     NotFoundError,
     AuthError,
 }, validators: {
     validateId,
 }
-} = require('commons')
+} = require("../../commons/src")
 const { validateInterests } = require('./helpers/validateData')
 
 function retrieveAllPosts(userId) {

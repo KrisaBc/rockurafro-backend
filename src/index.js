@@ -1,6 +1,6 @@
 require('dotenv').config()
 
-const { mongoose: { connect, disconnect } } = require('data')
+const { mongoose: { connect, disconnect } } = require('../data/src')
 const express = require('express')
 const cors = require('cors')
 const {

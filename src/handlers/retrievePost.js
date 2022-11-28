@@ -1,5 +1,5 @@
-const { retrievePost} = require('logic')
-const { errors: { FormatError, NotFoundError } } = require('commons')
+const { retrievePost} = require("../../logic/src")
+const { errors: { FormatError, NotFoundError } } = require("../../commons/src")
 
 module.exports = (req, res) => {
     try {

@@ -1,8 +1,8 @@
 require('dotenv').config()
 const { env: { JWT_SECRET, JWT_EXP } } = process
 const { sign } = require('jsonwebtoken')
-const { authenticateUser } = require('logic')
-const { errors: { AuthError, FormatError } } = require('commons')
+const { authenticateUser } = require("../../logic/src")
+const { errors: { AuthError, FormatError } } = require("../../commons/src")
 
 module.exports = (req, res) => {
     try {

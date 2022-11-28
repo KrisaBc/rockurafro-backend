@@ -1,4 +1,4 @@
-const { models: { User } } = require('data')
+const { models: { User } } = require("../../data/src")
 const { errors: {
     NotFoundError,
     AuthError,
@@ -9,7 +9,7 @@ const { errors: {
         validateArray,
         validateBoolean,
     }
-} = require('commons')
+} = require("../../commons/src")
 
 const { validateInterests } = require('./helpers/validateData')
 

@@ -1,6 +1,6 @@
-const {deleteUser} = require('logic')
+const {deleteUser} = require("../../logic/src")
 const extractUserIdFromToken = require('./helpers/extractUserIdFromToken')
-const {errors: {AuthError, FormatError, ClientError, NotFoundError} } = require('commons')
+const {errors: {AuthError, FormatError, ClientError, NotFoundError} } = require("../../commons/src")
 
 module.exports = (req, res) => {
     try {

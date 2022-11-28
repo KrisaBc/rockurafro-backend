@@ -1,4 +1,4 @@
-const { models: { User } } = require('data')
+const { models: { User } } = require("../../data/src")
 const { errors: {
     AuthError,
 },
@@ -6,7 +6,7 @@ const { errors: {
         validateEmail,
         validatePassword
     }
-} = require('commons')
+} = require("../../commons/src")
 const { comparePassword } = require('./helpers/crypt')
 
 function authenticateUser(email, password) {

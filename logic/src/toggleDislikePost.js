@@ -1,9 +1,9 @@
-const { models: { User, Post } } = require('data')
+const { models: { User, Post } } = require("../../data/src")
 const { validators: {
     validateId,
 }, errors: {
     ClientError, NotFoundError, AuthError
-} } = require('commons')
+} } = require("../../commons/src")
 
 
 function toggleDislikePost(userId, postId) {

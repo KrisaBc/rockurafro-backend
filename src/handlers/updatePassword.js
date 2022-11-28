@@ -1,6 +1,6 @@
-const { updatePassword } = require('logic')
+const { updatePassword } = require("../../logic/src")
 const extractUserIdFromToken = require('./helpers/extractUserIdFromToken')
-const { errors: { NotFoundError, FormatError, ClientError, AuthError } } = require('commons')
+const { errors: { NotFoundError, FormatError, ClientError, AuthError } } = require("../../commons/src")
 
 module.exports = (req, res) => {
     try {

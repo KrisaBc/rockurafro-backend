@@ -1,6 +1,6 @@
-const { updateUserHairTextureAndInterests } = require('logic')
+const { updateUserHairTextureAndInterests } = require("../../logic/src")
 const extractUserIdFromToken = require('./helpers/extractUserIdFromToken')
-const { errors: { NotFoundError, FormatError, ClientError, AuthError, ValueError } } = require('commons')
+const { errors: { NotFoundError, FormatError, ClientError, AuthError, ValueError } } = require("../../commons/src")
 
 module.exports = (req, res) => {
     try {

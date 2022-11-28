@@ -19,9 +19,7 @@
     "jsonwebtoken": "^8.5.1",
     "nodemon": "^2.0.16",
     "mongoose": "^6.3.2",
-    "bcryptjs": "^2.4.3",
-    "commons": "file:../commons",
-    "logic": "file:../logic"
+    "bcryptjs": "^2.4.3"
   },
   "devDependencies": {
     "chai": "^4.3.6",

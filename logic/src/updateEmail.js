@@ -1,4 +1,4 @@
-const { models: { User } } = require('data')
+const { models: { User } } = require("../../data/src")
 const { errors: {
     AuthError,
     DuplicityError,
@@ -9,7 +9,7 @@ const { errors: {
         validateId,
         validateEmail,
     }
-} = require('commons')
+} = require("../../commons/src")
 const { comparePassword } = require('./helpers/crypt')
 
 function updateEmail(userId, password, email) {

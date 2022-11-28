@@ -1,4 +1,4 @@
-const { mongoose: { connect, disconnect } } = require('data')
+const { mongoose: { connect, disconnect } } = require("../../data/src")
 const { registerUser } = require('.')
 
 

@@ -1,11 +1,11 @@
-const { models: { User, Post, Comment } } = require('data')
+const { models: { User, Post, Comment } } = require("../../data/src")
 const { errors: {
     NotFoundError,
 }, validators: {
     validateId,
     validateString
 }
-} = require('commons')
+} = require("../../commons/src")
 
 function addCommentToPost(userId, postId, text) {
     validateId(userId, 'userId')

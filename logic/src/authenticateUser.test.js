@@ -1,10 +1,10 @@
 const authenticateUser = require('./authenticateUser')
 
 require('dotenv').config()
-const { mongoose: { connect, disconnect }, models: { User } } = require('data')
+const { mongoose: { connect, disconnect }, models: { User } } = require("../../data/src")
 
 const bcrypt = require('bcryptjs')
-const { errors: { AuthError } } = require('commons')
+const { errors: { AuthError } } = require("../../commons/src")
 
 const { env: { MONGODB_URL } } = process
 

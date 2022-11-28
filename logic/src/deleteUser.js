@@ -1,4 +1,4 @@
-const { models: { User, Post, Comment } } = require('data')
+const { models: { User, Post, Comment } } = require("../../data/src")
 const { errors: {
     AuthError,
     ClientError,
@@ -8,7 +8,7 @@ const { errors: {
         validatePassword,
         validateId,
     }
-} = require('commons')
+} = require("../../commons/src")
 const { comparePassword } = require('./helpers/crypt')
 
 function deleteUser(userId, password) {

@@ -1,4 +1,4 @@
-const { models: { User } } = require('data')
+const { models: { User } } = require("../../data/src")
 const { errors: {
     DuplicityError,
     ClientError
@@ -8,7 +8,7 @@ const { errors: {
         validateEmail,
         validatePassword
     }
-} = require('commons')
+} = require("../../commons/src")
 const { encryptPassword } = require('./helpers/crypt')
 
 function registerUser(nickname, email, password) {

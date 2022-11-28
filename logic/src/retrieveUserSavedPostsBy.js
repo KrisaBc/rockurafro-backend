@@ -1,4 +1,4 @@
-const { models: { User, Post } } = require('data')
+const { models: { User, Post } } = require("../../data/src")
 const { errors: {
     NotFoundError,
     ConditionError,
@@ -6,7 +6,7 @@ const { errors: {
     validateId,
     validateString,
 }
-} = require('commons')
+} = require("../../commons/src")
 
 const {validateCategory, validateSubject} = require('./helpers/validateData')
 

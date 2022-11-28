@@ -1,10 +1,10 @@
-const { models: { Post } } = require('data')
+const { models: { Post } } = require("../../data/src")
 const { errors: {
     NotFoundError
 }, validators: {
     validateId,
 }
-} = require('commons')
+} = require("../../commons/src")
 
 function retrievePost(postId) {
     validateId(postId, 'postId')

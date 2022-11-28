@@ -1,5 +1,5 @@
-const { toggleSavePost } = require('logic')
-const { errors: { FormatError, AuthError, NotFoundError } } = require('commons')
+const { toggleSavePost } = require("../../logic/src")
+const { errors: { FormatError, AuthError, NotFoundError } } = require("../../commons/src")
 const extractUserIdFromToken = require('./helpers/extractUserIdFromToken')
 
 module.exports = (req, res) => {

@@ -1,5 +1,5 @@
-const { retrieveUserPostsBy } = require('logic')
-const { errors: { FormatError, AuthError, NotFoundError, ConditionError, ValueError } } = require('commons')
+const { retrieveUserPostsBy } = require("../../logic/src")
+const { errors: { FormatError, AuthError, NotFoundError, ConditionError, ValueError } } = require("../../commons/src")
 const extractUserIdFromToken = require('./helpers/extractUserIdFromToken')
 
 module.exports = (req, res) => {

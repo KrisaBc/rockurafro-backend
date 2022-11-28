@@ -1,10 +1,10 @@
 const registerUser = require('./registerUser')
 
 require('dotenv').config()
-const { mongoose: { connect, disconnect }, models: { User } } = require('data')
+const { mongoose: { connect, disconnect }, models: { User } } = require("../../data/src")
 const { expect } = require('chai')
 const bcrypt = require('bcryptjs')
-const { errors: { DuplicityError } } = require('commons')
+const { errors: { DuplicityError } } = require("../../commons/src")
 
 const { env: { MONGODB_URL } } = process
 

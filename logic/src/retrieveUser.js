@@ -1,9 +1,9 @@
-const { models: { User } } = require('data')
+const { models: { User } } = require("../../data/src")
 const { validators: {
     validateId,
 }, errors: {
     ClientError, NotFoundError, AuthError
-} } = require('commons')
+} } = require("../../commons/src")
 
 
 function retrieveUser(userId) {

@@ -1,5 +1,5 @@
-const { registerUser } = require('logic')
-const { errors: { DuplicityError, FormatError } } = require('commons')
+const { registerUser } = require("../../logic/src")
+const { errors: { DuplicityError, FormatError } } = require("../../commons/src")
 
 module.exports = (req, res) => {
     try {
